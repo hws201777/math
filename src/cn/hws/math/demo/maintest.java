@@ -19,9 +19,18 @@ public class maintest {
         u.setAge(4);
         u.setClassname("mmmm");
         Map map = new HashMap<>();
+
+
+
+
+
         map.put("p",p);
         map.put("u",u);
         System.out.print("123");
+
+
+
+
 
     }
 
