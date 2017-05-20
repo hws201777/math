@@ -26,7 +26,8 @@ public class maintest {
 
         map.put("p",p);
         map.put("u",u);
-        System.out.print("123");System.out.print("123");System.out.print("123");System.out.print("123");
+
+        System.out.print("2222");System.out.print("2221");System.out.print("123");System.out.print("123");
 
 
 
