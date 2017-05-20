@@ -28,6 +28,8 @@ public class maintest {
         map.put("u",u);
         System.out.print("44543");
 
+        System.out.print("2222");System.out.print("2221");System.out.print("123");System.out.print("123");
+
 
 
 
