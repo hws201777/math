@@ -1,6 +1,11 @@
 package cn.hws.math;
 
+import com.sun.corba.se.impl.orbutil.graph.Graph;
 import org.junit.Test;
+
+import java.util.LinkedList;
+import java.util.Stack;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by hws on 2017/3/31.
@@ -28,6 +33,29 @@ public class MathDemo {
             f2 = f1 + f2;
             f1 = f;
             System.out.println("第" + i + "个月兔子对数为:" + f2);
+        }
+    }
+
+
+    // 插入排序，a表示数组，n表示数组大小
+    @Test
+    public void insertionSort() {
+        int[] a = {1,3,2,7,6,5,4,8,9,0};
+        int n = 10;
+        if (n <= 1) return;
+
+        for (int i = 1; i < n; ++i) {
+            int value = a[i];
+            int j = i - 1;
+            // 查找插入的位置
+            for (; j >= 0; --j) {
+                if (a[j] > value) {
+                    a[j+1] = a[j];  // 数据移动
+                } else {
+                    break;
+                }
+            }
+            a[j+1] = value; // 插入数据
         }
     }
 
@@ -182,5 +210,14 @@ public class MathDemo {
             k++;
         }
         return sum;
+
     }
+     @Test
+    public void test08(){
+        String s = "";
+    }
+
+
+
+
 }
